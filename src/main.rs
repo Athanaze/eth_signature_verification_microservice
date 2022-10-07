@@ -42,7 +42,7 @@ fn verify(a: String, s: String) -> bool {
 }
 
 fn main() {
-    rocket::ignite().mount("/login", routes![login]).mount("/", routes![default_route_get,default_route_post ]).launch();
+    rocket::ignite().mount("/login", routes![login]).launch();
 }
 
 use hex::FromHexError;
